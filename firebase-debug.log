@@ -1,0 +1,16 @@
+[debug] [2025-02-12T13:54:20.549Z] ----------------------------------------------------------------------
+[debug] [2025-02-12T13:54:20.552Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\xnovh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-02-12T13:54:20.552Z] CLI Version:   13.30.0
+[debug] [2025-02-12T13:54:20.552Z] Platform:      win32
+[debug] [2025-02-12T13:54:20.552Z] Node Version:  v20.17.0
+[debug] [2025-02-12T13:54:20.552Z] Time:          Wed Feb 12 2025 20:54:20 GMT+0700 (Indochina Time)
+[debug] [2025-02-12T13:54:20.553Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-12T13:54:20.792Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-12T13:54:20.792Z] > authorizing via signed-in user (xnovhh@gmail.com)
+[debug] [2025-02-12T13:54:20.792Z] [iam] checking project cieciegif for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-12T13:54:20.793Z] Checked if tokens are valid: true, expires at: 1739370916111
+[debug] [2025-02-12T13:54:20.794Z] Checked if tokens are valid: true, expires at: 1739370916111
+[debug] [2025-02-12T13:54:20.795Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cieciegif:testIamPermissions [none]
+[debug] [2025-02-12T13:54:20.795Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cieciegif:testIamPermissions x-goog-quota-user=projects/cieciegif
+[debug] [2025-02-12T13:54:20.795Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cieciegif:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
