@@ -11,6 +11,24 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "CieCie Gift - Món quà từ trái tim",
   description: "Cửa hàng quà tặng handmade độc đáo",
+  openGraph: {
+    title: "CieCie Gift - Món quà từ trái tim",
+    description: "Cửa hàng quà tặng handmade độc đáo",
+    images: [
+      {
+        url: "/logo.png",
+        width: 800,
+        height: 600,
+        alt: "CieCie Gift Logo"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CieCie Gift - Món quà từ trái tim",
+    description: "Cửa hàng quà tặng handmade độc đáo",
+    images: ["/logo.png"]
+  }
 }
 
 export default function RootLayout({
