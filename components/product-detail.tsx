@@ -1,11 +1,10 @@
 'use client'
 
-import { use, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { useCart } from '@/lib/context/cart-context'
-import products from '@/public/data/products.json'
 import ProductGrid from '@/components/product-grid'
 import { Product } from '@/lib/types'
 
@@ -16,21 +15,18 @@ function getRandomProducts(products: Product[], currentId: number, count: number
     .slice(0, count);
 }
 
-export default function ProductPage({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = use(params)
+interface ProductDetailProps {
+  product: Product;
+  products: Product[];
+}
+
+export default function ProductDetail({ product, products }: ProductDetailProps) {
   const { addToCart } = useCart()
-  const product = products.find(p => p.id === parseInt(resolvedParams.id))
   const [randomProducts, setRandomProducts] = useState<Product[]>([])
 
   useEffect(() => {
-    if (product) {
-      setRandomProducts(getRandomProducts(products, product.id, 4))
-    }
-  }, [product])
-
-  if (!product) {
-    return <div>Không tìm thấy sản phẩm</div>
-  }
+    setRandomProducts(getRandomProducts(products, product.id, 4))
+  }, [product.id, products])
 
   return (
     <div className="min-h-screen bg-[#4a1414]">
