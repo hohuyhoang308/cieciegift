@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "CieCie Gift - Món quà từ trái tim",
   description: "Cửa hàng quà tặng handmade độc đáo",
+  metadataBase: new URL('https://cieciegift.vercel.app'),
   openGraph: {
     title: "CieCie Gift - Món quà từ trái tim",
     description: "Cửa hàng quà tặng handmade độc đáo",
