@@ -8,6 +8,7 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  overflow-y: hidden; /* Ẩn cuộn dọc */
 }
 
 .product-showcase::-webkit-scrollbar {
@@ -30,7 +31,6 @@
 .product-showcase-item:hover {
   @apply scale-105;
 }
-
 @layer base {
   :root {
     --background: 0 0% 100%;

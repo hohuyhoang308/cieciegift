@@ -6,9 +6,24 @@ import Image from "next/image";
 const NUMBER_OF_IMAGES = 9;
 const producImages = Array.from({ length: NUMBER_OF_IMAGES }, (_, i) => `/images/producs/produc_${i + 1}.png`);
 
+const shuffleArray = (array: string[]) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
 export default function HeroSection() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [shuffledImages, setShuffledImages] = useState<string[]>([]);
+
+  useEffect(() => {
+    // Shuffle images on component mount
+    setShuffledImages(shuffleArray([...producImages]));
+  }, []);
+
   useEffect(() => {
     const handleAutoScroll = () => {
       if (carouselRef.current) {
@@ -26,7 +41,7 @@ export default function HeroSection() {
 
         setScrollPosition(newPosition);
       }
-    }
+    };
 
     const intervalId = setInterval(handleAutoScroll, 50);
     return () => clearInterval(intervalId);
@@ -34,7 +49,6 @@ export default function HeroSection() {
 
   return (
     <section className="relative bg-primary overflow-hidden">
-
       <div className="relative min-h-[calc(50vh-3rem)]">
         {/* Hero Image Container */}
         <div className="absolute inset-0">
@@ -59,7 +73,7 @@ export default function HeroSection() {
 
           <div className="relative">
             <div ref={carouselRef} className="flex items-center overflow-x-hidden space-x-4 product-showcase">
-              {producImages.concat(producImages).map((imagePath, index) => ( // Duplicate items for continuous effect
+              {shuffledImages.concat(shuffledImages).map((imagePath, index) => ( // Duplicate items for continuous effect
                 <div key={index} className="flex-shrink-0 w-40 flex items-center">
                   <Image
                     src={imagePath || "/placeholder.svg"}
