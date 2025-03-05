@@ -59,21 +59,36 @@ export default function HeroSection() {
               fill
               className="object-cover object-left"
               priority
-              sizes="1300vw"
+              sizes="100vw"
             />
+            {/* Thêm lớp overlay tối */}
+            <div className="absolute inset-0 bg-black/50"></div>
           </div>
         </div>
-        <div className="container mx-auto px-4 py-16 relative">
-          <div className="text-center space-y-6 mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-secondary">GIẢI PHÁP QUÀ TẶNG DOANH NGHIỆP</h1>
-            <p className="text-xl text-white/90">MẪU MÃ ĐA DẠNG, GIÁ CẢ HỢP LÝ, CHẤT LƯỢNG CAO</p>
-            <p className="text-lg text-white/80">CHỈ CẦN CHO NGÂN SÁCH, ĐỐI TƯỢNG CẦN TẶNG</p>
-            <h2 className="text-2xl font-bold text-secondary">CHÚNG TÔI SẼ ĐƯA RA GIẢI PHÁP PHÙ HỢP</h2>
+        <div className="container mx-auto px-4 py-12 md:py-16 relative">
+          <div className="text-center space-y-4 md:space-y-6 max-w-4xl mx-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-secondary tracking-wide leading-tight">
+              GIẢI PHÁP QUÀ TẶNG<br className="hidden sm:block" /> DOANH NGHIỆP
+            </h1>
+            
+            <p className="text-lg sm:text-xl md:text-2xl text-white/90 font-medium tracking-wide leading-relaxed">
+              MẪU MÃ ĐA DẠNG, GIÁ CẢ HỢP LÝ, CHẤT LƯỢNG CAO
+            </p>
+            
+            <div className="h-0.5 w-24 md:w-32 bg-secondary/50 mx-auto"></div>
+            
+            <p className="text-base sm:text-lg md:text-xl text-white/80 font-medium tracking-wide">
+              CHỈ CẦN CHO NGÂN SÁCH, ĐỐI TƯỢNG CẦN TẶNG
+            </p>
+            
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary tracking-wide leading-tight">
+              CHÚNG TÔI SẼ ĐƯA RA<br className="hidden sm:block" /> GIẢI PHÁP PHÙ HỢP
+            </h2>
           </div>
 
-          <div className="relative">
+          <div className="relative mt-8">
             <div ref={carouselRef} className="flex items-center overflow-x-hidden space-x-4 product-showcase">
-              {shuffledImages.concat(shuffledImages).map((imagePath, index) => ( // Duplicate items for continuous effect
+              {shuffledImages.concat(shuffledImages).map((imagePath, index) => (
                 <div key={index} className="flex-shrink-0 w-40 flex items-center">
                   <Image
                     src={imagePath || "/placeholder.svg"}
