@@ -48,7 +48,7 @@ export default function ContactPage() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="bg-[rgb(74 20 20)] border-red-900 text-white"
+                  className="bg-[rgb(74 20 20)] border-red-900"
                   required
                 />
               </div>
@@ -61,7 +61,7 @@ export default function ContactPage() {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="bg-[rgb(74 20 20)] border-red-900 text-white"
+                  className="bg-[rgb(74 20 20)] border-red-900 "
                   required
                 />
               </div>
@@ -73,7 +73,7 @@ export default function ContactPage() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="bg-[rgb(74 20 20)] border-red-900 text-white"
+                  className="bg-[rgb(74 20 20)] border-red-900 "
                   required
                 />
               </div>
@@ -85,7 +85,7 @@ export default function ContactPage() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="bg-[rgb(74 20 20)] border-red-900 text-white min-h-[150px]"
+                  className="bg-[rgb(74 20 20)] border-red-900 min-h-[150px]"
                   required
                 />
               </div>

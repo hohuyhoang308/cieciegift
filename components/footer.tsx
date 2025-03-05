@@ -65,8 +65,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/qua-tang-tet" className="text-white/80 hover:text-white">
-                  Quà tặng tết
+                <Link href="/qua-tang-valenitne" className="text-white/80 hover:text-white">
+                  Quà tặng valenitne
                 </Link>
               </li>
               <li>

@@ -1,137 +1,396 @@
-[
-  {
-    "id": 1,
-    "name": "Giỏ Quà Tết 1",
-    "price": "500.000đ",
-    "image": "/images/producs/produc_1.png",
-    "description": "Giỏ quà tết cao cấp gồm các sản phẩm tuyển chọn",
-    "details": [
-      "Bánh kẹo nhập khẩu cao cấp",
-      "Trà, cafe thượng hạng",
-      "Các loại hạt dinh dưỡng",
-      "Rượu vang đặc biệt",
-      "Giỏ mây thủ công cao cấp"
-    ],
-    "shipping": "Giao hàng miễn phí nội thành TP.HCM"
-  },
-  {
-    "id": 2,
-    "name": "Giỏ Quà Tết 2",
-    "price": "1.000.000đ",
-    "image": "/images/producs/produc_2.png",
-    "description": "Giỏ quà tết phong phú với nhiều sản phẩm độc đáo",
-    "details": [
-      "Bánh kẹo cao cấp",
-      "Trà ô long thượng hạng",
-      "Nước yến sào",
-      "Các loại hạt cao cấp",
-      "Giỏ mây trang trí"
-    ],
-    "shipping": "Giao hàng miễn phí nội thành TP.HCM"
-  },
-  {
-    "id": 3,
-    "name": "Giỏ Quà Tết 3",
-    "price": "1.500.000đ",
-    "image": "/images/producs/produc_3.png",
-    "description": "Giỏ quà tết sang trọng với các sản phẩm nhập khẩu",
-    "details": [
-      "Rượu vang Chile",
-      "Bánh kẹo nhập khẩu",
-      "Trà thượng hạng",
-      "Hạt dinh dưỡng cao cấp",
-      "Giỏ quà thiết kế đặc biệt"
-    ],
-    "shipping": "Giao hàng miễn phí toàn quốc"
-  },
-  {
-    "id": 4,
-    "name": "Giỏ Quà Tết 4",
-    "price": "2.000.000đ",
-    "image": "/images/producs/produc_4.png",
-    "description": "Giỏ quà tết đẳng cấp với sản phẩm độc quyền",
-    "details": [
-      "Rượu vang Pháp",
-      "Bánh kẹo cao cấp",
-      "Trà ô long thượng hạng",
-      "Yến sào nguyên tổ",
-      "Giỏ quà thiết kế cao cấp"
-    ],
-    "shipping": "Giao hàng miễn phí toàn quốc"
-  },
-  {
-    "id": 5,
-    "name": "Giỏ Quà Tết 5",
-    "price": "2.500.000đ",
-    "image": "/images/producs/produc_5.png",
-    "description": "Giỏ quà tết premium với các sản phẩm quý hiếm",
-    "details": [
-      "Rượu whisky cao cấp",
-      "Bánh kẹo nhập khẩu",
-      "Trà sâm Hàn Quốc",
-      "Nhân sâm tươi",
-      "Giỏ quà độc quyền"
-    ],
-    "shipping": "Giao hàng miễn phí toàn quốc"
-  },
-  {
-    "id": 6,
-    "name": "Giỏ Quà Tết 6",
-    "price": "3.000.000đ",
-    "image": "/images/producs/produc_6.png",
-    "description": "Giỏ quà tết thượng hạng với sản phẩm nhập khẩu",
-    "details": [
-      "Rượu Champagne",
-      "Chocolate Belgium",
-      "Trà Oolong Đài Loan",
-      "Sâm Hàn Quốc",
-      "Giỏ quà thiết kế đặc biệt"
-    ],
-    "shipping": "Giao hàng miễn phí toàn quốc"
-  },
-  {
-    "id": 7,
-    "name": "Giỏ Quà Tết 7",
-    "price": "3.500.000đ",
-    "image": "/images/producs/produc_7.png",
-    "description": "Giỏ quà tết cao cấp với sản phẩm độc quyền",
-    "details": [
-      "Rượu Macallan",
-      "Bánh kẹo nhập khẩu",
-      "Trà Oolong hảo hạng",
-      "Yến sào thượng hạng",
-      "Giỏ quà độc quyền"
-    ],
-    "shipping": "Giao hàng miễn phí toàn quốc"
-  },
-  {
-    "id": 8,
-    "name": "Giỏ Quà Tết 8",
-    "price": "4.000.000đ",
-    "image": "/images/producs/produc_8.png",
-    "description": "Giỏ quà tết VIP với các sản phẩm quý hiếm",
-    "details": [
-      "Rượu Hennessy XO",
-      "Chocolate Godiva",
-      "Trà Oolong núi A Lý",
-      "Yến sào nguyên tổ",
-      "Giỏ quà độc quyền"
-    ],
-    "shipping": "Giao hàng miễn phí toàn quốc"
-  },
-  {
-    "id": 9,
-    "name": "Giỏ Quà Tết 9",
-    "price": "4.500.000đ",
-    "image": "/images/producs/produc_9.png",
-    "description": "Giỏ quà tết đặc biệt với sản phẩm limited edition",
-    "details": [
-      "Rượu Royal Salute 21",
-      "Chocolate Bỉ cao cấp",
-      "Trà Oolong limited",
-      "Yến sào thượng hạng",
-      "Giỏ quà độc quyền"
-    ],
-    "shipping": "Giao hàng miễn phí toàn quốc"
-  }
-]
+{
+  "doanhnghiep": [
+    {
+      "id": 1,
+      "name": "Giỏ Quà Tết 1",
+      "price": "500.000đ",
+      "image": "/images/products/doanhnghiep/product_1.png",
+      "description": "Giỏ quà tết cao cấp gồm các sản phẩm tuyển chọn",
+      "details": [
+        "Bánh kẹo nhập khẩu cao cấp",
+        "Trà, cafe thượng hạng",
+        "Các loại hạt dinh dưỡng",
+        "Rượu vang đặc biệt",
+        "Giỏ mây thủ công cao cấp"
+      ],
+      "shipping": "Giao hàng miễn phí nội thành TP.HCM"
+    },
+    {
+      "id": 2,
+      "name": "Giỏ Quà Tết 2",
+      "price": "1.000.000đ",
+      "image": "/images/products/doanhnghiep/product_2.png",
+      "description": "Giỏ quà tết phong phú với nhiều sản phẩm độc đáo",
+      "details": [
+        "Bánh kẹo cao cấp",
+        "Trà ô long thượng hạng",
+        "Nước yến sào",
+        "Các loại hạt cao cấp",
+        "Giỏ mây trang trí"
+      ],
+      "shipping": "Giao hàng miễn phí nội thành TP.HCM"
+    },
+    {
+      "id": 3,
+      "name": "Giỏ Quà Tết 3",
+      "price": "1.500.000đ",
+      "image": "/images/products/doanhnghiep/product_3.png",
+      "description": "Giỏ quà tết sang trọng với các sản phẩm nhập khẩu",
+      "details": [
+        "Rượu vang Chile",
+        "Bánh kẹo nhập khẩu",
+        "Trà thượng hạng",
+        "Hạt dinh dưỡng cao cấp",
+        "Giỏ quà thiết kế đặc biệt"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 4,
+      "name": "Giỏ Quà Tết 4",
+      "price": "2.000.000đ",
+      "image": "/images/products/doanhnghiep/product_4.png",
+      "description": "Giỏ quà tết đẳng cấp với sản phẩm độc quyền",
+      "details": [
+        "Rượu vang Pháp",
+        "Bánh kẹo cao cấp",
+        "Trà ô long thượng hạng",
+        "Yến sào nguyên tổ",
+        "Giỏ quà thiết kế cao cấp"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 5,
+      "name": "Giỏ Quà Tết 5",
+      "price": "2.500.000đ",
+      "image": "/images/products/doanhnghiep/product_5.png",
+      "description": "Giỏ quà tết premium với các sản phẩm quý hiếm",
+      "details": [
+        "Rượu whisky cao cấp",
+        "Bánh kẹo nhập khẩu",
+        "Trà sâm Hàn Quốc",
+        "Nhân sâm tươi",
+        "Giỏ quà độc quyền"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 6,
+      "name": "Giỏ Quà Tết 6",
+      "price": "3.000.000đ",
+      "image": "/images/products/doanhnghiep/product_6.png",
+      "description": "Giỏ quà tết thượng hạng với sản phẩm nhập khẩu",
+      "details": [
+        "Rượu Champagne",
+        "Chocolate Belgium",
+        "Trà Oolong Đài Loan",
+        "Sâm Hàn Quốc",
+        "Giỏ quà thiết kế đặc biệt"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 7,
+      "name": "Giỏ Quà Tết 7",
+      "price": "3.500.000đ",
+      "image": "/images/products/doanhnghiep/product_7.png",
+      "description": "Giỏ quà tết cao cấp với sản phẩm độc quyền",
+      "details": [
+        "Rượu Macallan",
+        "Bánh kẹo nhập khẩu",
+        "Trà Oolong hảo hạng",
+        "Yến sào thượng hạng",
+        "Giỏ quà độc quyền"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 8,
+      "name": "Giỏ Quà Tết 8",
+      "price": "4.000.000đ",
+      "image": "/images/products/doanhnghiep/product_8.png",
+      "description": "Giỏ quà tết VIP với các sản phẩm quý hiếm",
+      "details": [
+        "Rượu Hennessy XO",
+        "Chocolate Godiva",
+        "Trà Oolong núi A Lý",
+        "Yến sào nguyên tổ",
+        "Giỏ quà độc quyền"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 9,
+      "name": "Giỏ Quà Tết 9",
+      "price": "4.500.000đ",
+      "image": "/images/products/doanhnghiep/product_9.png",
+      "description": "Giỏ quà tết đặc biệt với sản phẩm limited edition",
+      "details": [
+        "Rượu Royal Salute 21",
+        "Chocolate Bỉ cao cấp",
+        "Trà Oolong limited",
+        "Yến sào thượng hạng",
+        "Giỏ quà độc quyền"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    }
+  ],
+  "valentine": [
+    {
+      "id": 1,
+      "name": "Hộp Quà Valentine 1",
+      "price": "300.000đ",
+      "image": "/images/products/valentine/product_1.png",
+      "description": "Hộp quà Valentine đặc biệt với chocolate cao cấp",
+      "details": [
+        "Chocolate Bỉ thượng hạng",
+        "Hoa hồng tươi",
+        "Thiệp handmade",
+        "Gấu bông xinh xắn",
+        "Hộp quà sang trọng"
+      ],
+      "shipping": "Giao hàng miễn phí nội thành TP.HCM"
+    },
+    {
+      "id": 2,
+      "name": "Hộp Quà Valentine 2",
+      "price": "500.000đ",
+      "image": "/images/products/valentine/product_2.png",
+      "description": "Set quà Valentine lãng mạn và ngọt ngào",
+      "details": [
+        "Chocolate Godiva",
+        "Hoa hồng Ecuador",
+        "Thiệp 3D handmade",
+        "Gấu bông cao cấp",
+        "Hộp quà thiết kế"
+      ],
+      "shipping": "Giao hàng miễn phí nội thành TP.HCM"
+    },
+    {
+      "id": 3,
+      "name": "Hộp Quà Valentine 3",
+      "price": "700.000đ",
+      "image": "/images/products/valentine/product_3.png",
+      "description": "Combo Valentine sang trọng và tinh tế",
+      "details": [
+        "Chocolate Ferrero Rocher",
+        "Hoa hồng nhập khẩu",
+        "Thiệp thiết kế độc quyền",
+        "Gấu bông limited",
+        "Hộp quà cao cấp"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 4,
+      "name": "Hộp Quà Valentine 4",
+      "price": "900.000đ",
+      "image": "/images/products/valentine/product_4.png",
+      "description": "Set quà Valentine premium đầy ý nghĩa",
+      "details": [
+        "Chocolate Lindor",
+        "Hoa hồng vĩnh cửu",
+        "Thiệp nghệ thuật",
+        "Gấu bông nhập khẩu",
+        "Hộp quà đặc biệt"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 5,
+      "name": "Hộp Quà Valentine 5",
+      "price": "1.200.000đ",
+      "image": "/images/products/valentine/product_5.png",
+      "description": "Hộp quà Valentine luxury đẳng cấp",
+      "details": [
+        "Chocolate La Maison",
+        "Hoa hồng độc quyền",
+        "Thiệp đá quý",
+        "Gấu bông cao cấp",
+        "Hộp quà sang trọng"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 6,
+      "name": "Hộp Quà Valentine 6",
+      "price": "1.500.000đ",
+      "image": "/images/products/valentine/product_6.png",
+      "description": "Set quà Valentine VIP độc đáo",
+      "details": [
+        "Chocolate Leonidas",
+        "Hoa hồng xanh",
+        "Thiệp crystal",
+        "Gấu bông đặc biệt",
+        "Hộp quà thiết kế"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 7,
+      "name": "Hộp Quà Valentine 7",
+      "price": "2.000.000đ",
+      "image": "/images/products/valentine/product_7.png",
+      "description": "Combo Valentine thượng hạng",
+      "details": [
+        "Chocolate Neuhaus",
+        "Hoa hồng đen",
+        "Thiệp kim cương",
+        "Gấu bông limited",
+        "Hộp quà độc quyền"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 8,
+      "name": "Hộp Quà Valentine 8",
+      "price": "2.500.000đ",
+      "image": "/images/products/valentine/product_8.png",
+      "description": "Set quà Valentine limited edition",
+      "details": [
+        "Chocolate Pierre Marcolini",
+        "Hoa hồng rainbow",
+        "Thiệp vàng 24k",
+        "Gấu bông collector",
+        "Hộp quà đặc biệt"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 9,
+      "name": "Hộp Quà Valentine 9",
+      "price": "3.000.000đ",
+      "image": "/images/products/valentine/product_9.png",
+      "description": "Combo Valentine exclusive",
+      "details": [
+        "Chocolate Jean-Paul Hévin",
+        "Hoa hồng độc bản",
+        "Thiệp ruby",
+        "Gấu bông quý hiếm",
+        "Hộp quà premium"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 10,
+      "name": "Hộp Quà Valentine Luxury 10",
+      "price": "3.500.000đ",
+      "image": "/images/products/valentine/product_10.png",
+      "description": "Set quà Valentine siêu cao cấp",
+      "details": [
+        "Chocolate Valrhona",
+        "Hoa hồng vĩnh cửu nhập khẩu",
+        "Thiệp sapphire",
+        "Gấu bông handmade Pháp",
+        "Hộp quà crystal"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 11,
+      "name": "Hộp Quà Valentine Premium 11",
+      "price": "4.000.000đ",
+      "image": "/images/products/valentine/product_11.png",
+      "description": "Bộ quà tặng Valentine đẳng cấp",
+      "details": [
+        "Chocolate Michel Cluizel",
+        "Hoa hồng xanh vĩnh cửu",
+        "Thiệp pearl",
+        "Gấu bông limited edition",
+        "Hộp quà da cao cấp"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 12,
+      "name": "Hộp Quà Valentine Special 12",
+      "price": "4.500.000đ",
+      "image": "/images/products/valentine/product_12.png",
+      "description": "Quà tặng Valentine độc đáo",
+      "details": [
+        "Chocolate Amedei",
+        "Hoa hồng đen vĩnh cửu",
+        "Thiệp emerald",
+        "Gấu bông sưu tầm",
+        "Hộp quà gỗ quý"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 13,
+      "name": "Hộp Quà Valentine Elite 13",
+      "price": "5.000.000đ",
+      "image": "/images/products/valentine/product_13.png",
+      "description": "Set quà Valentine tinh tế",
+      "details": [
+        "Chocolate To'ak",
+        "Hoa hồng galaxy vĩnh cửu",
+        "Thiệp platinum",
+        "Gấu bông nghệ thuật",
+        "Hộp quà đá cẩm thạch"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 14,
+      "name": "Hộp Quà Valentine Royal 14",
+      "price": "5.500.000đ",
+      "image": "/images/products/valentine/product_14.png",
+      "description": "Bộ quà Valentine hoàng gia",
+      "details": [
+        "Chocolate Delafee",
+        "Hoa hồng dát vàng",
+        "Thiệp đính kim cương",
+        "Gấu bông royal edition",
+        "Hộp quà hoàng gia"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 15,
+      "name": "Hộp Quà Valentine Supreme 15",
+      "price": "6.000.000đ",
+      "image": "/images/products/valentine/product_15.png",
+      "description": "Set quà Valentine tối thượng",
+      "details": [
+        "Chocolate Godiva G Collection",
+        "Hoa hồng pha lê",
+        "Thiệp nghệ thuật 3D",
+        "Gấu bông supreme",
+        "Hộp quà pha lê"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+    {
+      "id": 16,
+      "name": "Hộp Quà Valentine Ultimate 16",
+      "price": "6.500.000đ",
+      "image": "/images/products/valentine/product_16.png",
+      "description": "Bộ sưu tập Valentine ultimate",
+      "details": [
+        "Chocolate Vosges Haut",
+        "Hoa hồng vĩnh cửu premium",
+        "Thiệp nghệ thuật độc bản",
+        "Gấu bông ultimate",
+        "Hộp quà ultimate"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    },
+     {
+      "id": 17,
+      "name": "test",
+      "price": "6.500.000đ",
+      "image": "/images/products/valentine/product_17.png",
+      "description": "Bộ sưu tập Valentine ultimate",
+      "details": [
+        "test",
+        "Hoa hồng vĩnh cửu premium",
+        "Thiệp nghệ thuật độc bản",
+        "Gấu bông ultimate",
+        "Hộp quà ultimate"
+      ],
+      "shipping": "Giao hàng miễn phí toàn quốc"
+    }
+  ]
+}

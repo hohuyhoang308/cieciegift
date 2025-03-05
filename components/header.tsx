@@ -8,17 +8,17 @@ import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/co
 import { Button } from "@/components/ui/button"
 import Cart from "./cart"
 
+const navItems = [
+  { href: "/", label: "Trang Chủ" },
+  { href: "/gioi-thieu", label: "Giới Thiệu" },
+  { href: "/qua-tang-doanh-nghiep", label: "Quà Tặng Doanh Nghiệp" },
+  { href: "/qua-tang-valentine", label: "Quà Tặng Valentine" },
+  { href: "/lien-he", label: "Liên Hệ" },
+  { href: "/blog", label: "Blog" },
+]
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
-
-  const navItems = [
-    { href: "/", label: "Trang Chủ" },
-    { href: "/gioi-thieu", label: "Giới Thiệu" },
-    { href: "/qua-tang-doanh-nghiep", label: "Quà Tặng Doanh Nghiệp" },
-    { href: "/qua-tang-tet", label: "Quà Tặng Tết" },
-    { href: "/lien-he", label: "Liên Hệ" },
-    { href: "/blog", label: "Blog" },
-  ]
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-[#410c00] text-white">
@@ -49,15 +49,15 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="pl-0 bg-[#35090d] text-white border-l-white">
-              <SheetHeader>
-                <SheetTitle className="text-white">Menu</SheetTitle>
+              <SheetHeader className="px-6 pb-2 pt-4">
+                <SheetTitle className="text-xl font-bold text-white">Menu</SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col space-y-3 mt-4">
                 {navItems.map((item) => (
-                  <Link
+                  <Link 
                     key={item.href}
                     href={item.href}
-                    className="text-white transition-colors hover:text-white/80"
+                    className="text-white transition-colors hover:text-white/80 px-6 py-3 rounded-lg hover:bg-[#4a1414]"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.label}

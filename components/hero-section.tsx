@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 
 const NUMBER_OF_IMAGES = 9;
-const producImages = Array.from({ length: NUMBER_OF_IMAGES }, (_, i) => `/images/producs/produc_${i + 1}.png`);
+const producImages = Array.from({ length: NUMBER_OF_IMAGES }, (_, i) => `/images/products/doanhnghiep/product_${i + 1}.png`);
 
 const shuffleArray = (array: string[]) => {
   for (let i = array.length - 1; i > 0; i--) {

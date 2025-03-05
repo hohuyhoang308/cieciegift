@@ -1,6 +1,6 @@
 'use client'
 
-import { use, useState, useEffect } from 'react'
+import { use, useMemo } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
@@ -9,28 +9,56 @@ import products from '@/public/data/products.json'
 import ProductGrid from '@/components/product-grid'
 import { Product } from '@/lib/types'
 
-function getRandomProducts(products: Product[], currentId: number, count: number) {
-  return [...products]
-    .filter(p => p.id !== currentId)
-    .sort(() => Math.random() - 0.5)
+// Xử lý sản phẩm một lần duy nhất khi module được load
+const processedProducts = (() => {
+  const valentineProducts = products.valentine.map(product => ({
+    ...product,
+    id: product.id + 100 // Offset cố định cho sản phẩm Valentine
+  }));
+  return [...products.doanhnghiep, ...valentineProducts];
+})();
+
+// Hàm tạo số ngẫu nhiên với seed
+function seededRandom(seed: number) {
+  const x = Math.sin(seed++) * 10000;
+  return x - Math.floor(x);
+}
+
+// Hàm lấy sản phẩm liên quan từ cùng danh mục với seed
+function getRelatedProducts(currentProduct: Product, count: number, seed: number) {
+  // Xác định danh mục của sản phẩm hiện tại
+  const isValentine = currentProduct.id > 100;
+  
+  // Lấy danh sách sản phẩm cùng danh mục
+  const sameCategory = isValentine 
+    ? products.valentine.map(p => ({ ...p, id: p.id + 100 }))
+    : products.doanhnghiep;
+  
+  // Lọc bỏ sản phẩm hiện tại
+  const filteredProducts = sameCategory.filter(p => p.id !== currentProduct.id);
+  
+  // Sắp xếp sử dụng seededRandom
+  return [...filteredProducts]
+    .sort((a, b) => seededRandom(seed + a.id) - seededRandom(seed + b.id))
     .slice(0, count);
 }
 
 export default function ProductPage({ params }: { params: Promise<{ id: string }> }) {
-  const resolvedParams = use(params)
-  const { addToCart } = useCart()
-  const product = products.find(p => p.id === parseInt(resolvedParams.id))
-  const [randomProducts, setRandomProducts] = useState<Product[]>([])
+  const resolvedParams = use(params);
+  const productId = parseInt(resolvedParams.id);
+  const { addToCart } = useCart();
 
-  useEffect(() => {
-    if (product) {
-      setRandomProducts(getRandomProducts(products, product.id, 4))
-    }
-  }, [product])
-
+  const product = processedProducts.find(p => p.id === productId);
+  
   if (!product) {
-    return <div>Không tìm thấy sản phẩm</div>
+    return <div className="min-h-screen bg-[#4a1414] text-white p-8">Không tìm thấy sản phẩm</div>;
   }
+
+  // Sử dụng useMemo để cache kết quả và đảm bảo tính nhất quán
+  const relatedProducts = useMemo(() => 
+    getRelatedProducts(product, 4, productId), 
+    [product, productId]
+  );
 
   return (
     <div className="min-h-screen bg-[#4a1414]">
@@ -92,8 +120,8 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         {/* Phần sản phẩm liên quan */}
         <div className="mt-12">
           <ProductGrid 
-            products={randomProducts}
-            title="Sản phẩm khác"
+            products={relatedProducts}
+            title="Sản phẩm cùng loại"
             subtitle=""
           />
         </div>
