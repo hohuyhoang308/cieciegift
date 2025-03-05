@@ -25,7 +25,9 @@ function seededRandom(seed: number) {
 }
 
 // Hàm lấy sản phẩm liên quan từ cùng danh mục với seed
-function getRelatedProducts(currentProduct: Product, count: number, seed: number) {
+function getRelatedProducts(currentProduct: Product | undefined, count: number, seed: number) {
+  if (!currentProduct) return [];
+  
   // Xác định danh mục của sản phẩm hiện tại
   const isValentine = currentProduct.id > 100;
   
@@ -50,15 +52,15 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
 
   const product = processedProducts.find(p => p.id === productId);
   
-  if (!product) {
-    return <div className="min-h-screen bg-[#4a1414] text-white p-8">Không tìm thấy sản phẩm</div>;
-  }
-
   // Sử dụng useMemo để cache kết quả và đảm bảo tính nhất quán
   const relatedProducts = useMemo(() => 
     getRelatedProducts(product, 4, productId), 
     [product, productId]
   );
+
+  if (!product) {
+    return <div className="min-h-screen bg-[#4a1414] text-white p-8">Không tìm thấy sản phẩm</div>;
+  }
 
   return (
     <div className="min-h-screen bg-[#4a1414]">
