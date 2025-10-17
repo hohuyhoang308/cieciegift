@@ -150,7 +150,7 @@ export default function Footer() {
           </div>
 
           <div className="text-center mt-8 text-sm text-white/60">
-            <p>© 2024 Cie Cie Gift. Tất cả các quyền được bảo lưu.</p>
+            <p>© 2024 Hồ Huy Hoàng. Tất cả các quyền được bảo lưu.</p>
           </div>
         </div>
       </div>
