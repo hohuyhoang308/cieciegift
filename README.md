@@ -195,7 +195,7 @@ Chúng tôi hoan nghênh mọi đóng góp! Vui lòng:
 - Website: [https://cieciegift.id.vn/](https://cieciegift.id.vn/)
 
 ## 📞 Liên hệ
-- **Facebook**: https://www.facebook.com/hohuyhoang308/
+- **Facebook**: [Hồ Huy Hoàng](https://www.facebook.com/hohuyhoang308/)
 
 ## 🙏 Lời cảm ơn
 
