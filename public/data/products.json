@@ -376,21 +376,6 @@
         "Hộp quà ultimate"
       ],
       "shipping": "Giao hàng miễn phí toàn quốc"
-    },
-     {
-      "id": 17,
-      "name": "test",
-      "price": "6.500.000đ",
-      "image": "/images/products/valentine/product_17.png",
-      "description": "Bộ sưu tập Valentine ultimate",
-      "details": [
-        "test",
-        "Hoa hồng vĩnh cửu premium",
-        "Thiệp nghệ thuật độc bản",
-        "Gấu bông ultimate",
-        "Hộp quà ultimate"
-      ],
-      "shipping": "Giao hàng miễn phí toàn quốc"
     }
   ]
 }
